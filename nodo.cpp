@@ -58,6 +58,11 @@ void nodo::imprimir_enrrutador(){
     }
 }
 
-nodo::nodo() : enrrutador ({{"en", 0}}) {
+void nodo::eliminar_enrrutador()
+{
+
+}
+
+nodo::nodo() : enrrutador ({{"Enlace", 0}}) {
 
 }

@@ -5,9 +5,9 @@ red::red()
     // Constructor vacío
 }
 
-void red::agregar_nodos(map<string,int>nuevo_mapa)
+void red::agregar_nodos(nodo enrruta)
 {
-    vectorr.push_back(nuevo_mapa);
+    vectorr.push_back(enrruta);
 }
 
 void red:: imprimir_vector()

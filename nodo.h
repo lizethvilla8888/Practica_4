@@ -24,6 +24,7 @@ public:
     void eliminar_enlaces(string clave);
     void modificar_enlaces(string clave, int modificacion);
     void imprimir_enrrutador();
+    void eliminar_enrrutador(); // pendiente
 private:
     map<char,char>info_txt;
     map<string, int> enrrutador;
