@@ -60,11 +60,16 @@ void nodo::imprimir_enrrutador(){
 
 void nodo::eliminar_enrrutador()
 {
-  enrrutador.clear(); // modificacion c
+   enrrutador.clear();
 }
 
-nodo::nodo() : enrrutador ({{"Enlace", 0}}) {
+nodo::nodo(string n) : enrrutador ({{n, 0}}) {
+    nombre = n;
+}
 
+string nodo::obtener_nombre()
+{
+    return nombre;
 }
 
 

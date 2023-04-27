@@ -9,9 +9,11 @@ class red
 public:
     red();
     void agregar_nodos(nodo enrruta);
-    void eliminar_nodos(string nombre);
+    void eliminar_enlace_nodos(string nombre);
     void imprimir_vector();
-    void eliminar_nodo_conexiones(string nombre);
+    void eliminar_nodo(string nombre);
+
+
 
 private:
     vector <nodo> vectorr;

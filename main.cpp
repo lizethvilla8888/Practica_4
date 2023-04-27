@@ -49,40 +49,41 @@ int main()
     mi_red.imprimir_vector();
     mi_red.eliminar_nodos("A");
     mi_red.imprimir_vector();
+
 */
+    string uno = "enrrutador1", dos = "enrrutador2";
+    nodo enrrutador1 (uno);
+    enrrutador1.agregar_enlaces("A", 10);
+    enrrutador1.agregar_enlaces("B", 20);
+    enrrutador1.agregar_enlaces("C", 30);
 
-    nodo enrrutador1;
-    enrrutador1.agregar_enlaces("Enlace1", 10);
-    enrrutador1.agregar_enlaces("Enlace2", 20);
-    enrrutador1.agregar_enlaces("Enlace3", 30);
-
-    nodo enrrutador2;
-    enrrutador2.agregar_enlaces("Enlace1", 50);
-    enrrutador2.agregar_enlaces("Enlace4", 40);
-    enrrutador2.agregar_enlaces("Enlace5", 30);
-
-
+    nodo enrrutador2 (dos);
+    enrrutador2.agregar_enlaces("B", 50);
+    enrrutador2.agregar_enlaces("T", 40);
+    enrrutador2.agregar_enlaces("C", 30);
 
     red network;
     network.agregar_nodos(enrrutador1);
     network.agregar_nodos(enrrutador2);
 
 
-    cout << "Red"<< endl<<endl;
+    cout << "\n Red"<< endl<<endl;
 
     network.imprimir_vector();
-
-    network.eliminar_nodos("Enlace1");
 
     cout << "Imprimir vector"<<endl<<endl;
 
-    network.imprimir_vector();
+//    network.imprimir_vector();
 
-    enrrutador1.eliminar_enrrutador();
+//    enrrutador1.eliminar_enrrutador();
+
+
+
+    network.eliminar_nodo(uno);
 
     cout << "enrrutador 1 eliminado   \n \n \n ";
-
     network.imprimir_vector();
+
 
     return 0;
 }

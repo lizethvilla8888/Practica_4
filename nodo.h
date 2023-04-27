@@ -17,15 +17,18 @@ class nodo
 {
 public:
 
-    nodo();
-    string leer_texto();
-    void tra_inf(string info);
+    nodo(string n);
+    string obtener_nombre() ;
     void agregar_enlaces(string clave, int costo);
     void eliminar_enlaces(string clave);
     void modificar_enlaces(string clave, int modificacion);
     void imprimir_enrrutador();
     void eliminar_enrrutador(); // pendiente
+    string leer_texto();
+    void tra_inf(string info);
+
 private:
+    string nombre;
     map<char,char>info_txt;
     map<string, int> enrrutador;
     map<string, int>::iterator it;
