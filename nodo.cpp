@@ -36,7 +36,7 @@ void nodo::tra_inf(string info)
 
 }
 
-void nodo::Agregar_enlaces(string clave, int costo){
+void nodo::agregar_enlaces(string clave, int costo){
     pair<string, int> par{clave, costo};
     enrrutador.insert(par);
 }
@@ -60,9 +60,12 @@ void nodo::imprimir_enrrutador(){
 
 void nodo::eliminar_enrrutador()
 {
-
+  enrrutador.clear(); // modificacion c
 }
 
 nodo::nodo() : enrrutador ({{"Enlace", 0}}) {
 
 }
+
+
+

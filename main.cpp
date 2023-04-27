@@ -22,7 +22,7 @@ int main()
     mi_nodo.eliminar_enlaces("B");
     mi_nodo.Agregar_enlaces("x",100);
     mi_nodo.imprimir_enrrutador();
-*/
+
 
 
     red mi_red;
@@ -49,6 +49,40 @@ int main()
     mi_red.imprimir_vector();
     mi_red.eliminar_nodos("A");
     mi_red.imprimir_vector();
+*/
+
+    nodo enrrutador1;
+    enrrutador1.agregar_enlaces("Enlace1", 10);
+    enrrutador1.agregar_enlaces("Enlace2", 20);
+    enrrutador1.agregar_enlaces("Enlace3", 30);
+
+    nodo enrrutador2;
+    enrrutador2.agregar_enlaces("Enlace1", 50);
+    enrrutador2.agregar_enlaces("Enlace4", 40);
+    enrrutador2.agregar_enlaces("Enlace5", 30);
+
+
+
+    red network;
+    network.agregar_nodos(enrrutador1);
+    network.agregar_nodos(enrrutador2);
+
+
+    cout << "Red"<< endl<<endl;
+
+    network.imprimir_vector();
+
+    network.eliminar_nodos("Enlace1");
+
+    cout << "Imprimir vector"<<endl<<endl;
+
+    network.imprimir_vector();
+
+    enrrutador1.eliminar_enrrutador();
+
+    cout << "enrrutador 1 eliminado   \n \n \n ";
+
+    network.imprimir_vector();
 
     return 0;
 }

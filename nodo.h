@@ -20,7 +20,7 @@ public:
     nodo();
     string leer_texto();
     void tra_inf(string info);
-    void Agregar_enlaces(string clave, int costo);
+    void agregar_enlaces(string clave, int costo);
     void eliminar_enlaces(string clave);
     void modificar_enlaces(string clave, int modificacion);
     void imprimir_enrrutador();

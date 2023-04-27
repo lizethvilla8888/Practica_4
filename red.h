@@ -11,10 +11,11 @@ public:
     void agregar_nodos(nodo enrruta);
     void eliminar_nodos(string nombre);
     void imprimir_vector();
+    void eliminar_nodo_conexiones(string nombre);
 
 private:
-   // vector<map<string,int>>vectorr;
-    vector nodo ;
+    vector <nodo> vectorr;
+
 };
 
 #endif // RED_H
