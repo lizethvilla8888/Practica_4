@@ -36,6 +36,11 @@ void nodo::tra_inf(string info)
 
 }
 
+int nodo::obtenerCosto(string letra)
+{
+    return enrrutador[letra];
+}
+
 void nodo::agregar_enlaces(string clave, int costo){
     pair<string, int> par{clave, costo};
     enrrutador.insert(par);
@@ -53,6 +58,7 @@ void nodo::modificar_enlaces(string clave,int modificacion){
 
 void nodo::imprimir_enrrutador(){
 
+    cout << "Mapa de " << nombre << ":" << endl;
     for (it = enrrutador.begin(); it != enrrutador.end(); ++it) {
         cout << "Clave: " << it->first << ", Valor: " << it->second <<std::endl;
     }

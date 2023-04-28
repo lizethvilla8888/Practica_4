@@ -7,9 +7,7 @@
 #include <string.h>
 #include <fstream>
 #include <vector>
-
-
-
+#include <sstream>
 
 using namespace std;
 
@@ -18,14 +16,16 @@ class nodo
 public:
 
     nodo(string n);
+
     string obtener_nombre() ;
     void agregar_enlaces(string clave, int costo);
     void eliminar_enlaces(string clave);
     void modificar_enlaces(string clave, int modificacion);
     void imprimir_enrrutador();
-    void eliminar_enrrutador(); // pendiente
+    void eliminar_enrrutador();
     string leer_texto();
     void tra_inf(string info);
+    int obtenerCosto(string letra);
 
 private:
     string nombre;

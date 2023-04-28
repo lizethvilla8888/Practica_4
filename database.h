@@ -14,14 +14,15 @@ public:
     void set_name(string name);
     void set_path(string path);
     void set_append_char(char a);
-    string get_all_database();
+    string get_all_database(); // retorna toda la info de el texto en un string
     void append_data(string data);
     void insert_row(string data, unsigned int row);
     void append_data_col(string data, char limitator);
     void delete_row(unsigned int row);
     string get_row(unsigned int row);
-    vector<string> get_all_rows();
-    vector<string> get_col(unsigned int col);
+    vector<string> get_all_rows(); // rectorna las filas en un vector
+    vector<string> get_col(unsigned int col); // retorna las columnas
+
 
 private:
 
